@@ -3,97 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV cá nhân</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Sử dụng Google Fonts -->
-    <style>    
+    <title>CV chuyên nghiệp - Vũ Đồng</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4; /* Màu nền ngoài cv */
-        }
-        h1, h2, h3 {
-            color: #4500a0;
-            margin: 10px 0; /* Khoảng cách giữa các tiêu đề */
-            transition: color 0.5s; /* tốc độ chuyển màu nhanh hơn lật bánh tráng */
-        }
-        h1:hover, h2:hover, h3:hover {
-            color: #ff0000; /* Màu khi mà ai đó di chuột vào các mục 0.0 */
+            background-color: #f7f9fc;
+            color: #2c3e50;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 30px;
-            border: 1px solid #5d0097;
-            border-radius: 10px;
-            background-color: #ffffff; /* Màu nền cái cv của mình */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 40px;
+            font-weight: 800;
+        }
+        .header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: #e67e22;
         }
         .section {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-left: 5px solid #4500a0; /* Đường viền tím tím  */
-            background-color: #f9f9f9; /* Màu nền các mục tím tím */
-            border-radius: 5px; /* Bo tròn góc cv */
+            padding: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+        .section:last-child {
+            border-bottom: none;
         }
         .section h2 {
-            margin-bottom: 10px;
-            font-size: 24px; /* Kích thước tiêu đề siêu to khổng lồ */
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #3498db;
+            border-bottom: 3px solid #e1e8f0;
+            display: inline-block;
         }
-        .section ul {
-            list-style-type: disc; /* chấm chấm */
-            margin-left: 20px; /* Khoảng cách bên trái cho danh sách */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 600;
+            flex: 1 1 calc(33% - 20px);
+            text-align: center;
         }
         .footer {
-            margin-top: 20px;
             text-align: center;
-            font-size: 14px; /* Kích thước chữ nhỏ hơn cho phần footer */
-            color: #888; /* Màu xám cho phần footer */
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Vũ Đồng</h1>
-        <p><strong>Email:</strong> <a href="mailto:vd230606@gmail.com">vd230606@gmail.com</a></p>
-        <p><strong>Số điện thoại:</strong> <a href="tel:0901243701">0901243701</a></p>
-        <p><strong>Địa chỉ:</strong> TP.HCM, VIỆT NAM</p>
-
-        <div class="section">
-            <h2>Giới thiệu về bản thân</h2>
-            <p>Chào bạn! Tôi là Vũ Đồng, một sinh viên năm nhất tại Đại học Sư phạm TP.HCM, hiện đang theo học chuyên ngành Công nghệ Thông tin. Tôi rất đam mê công nghệ và luôn nỗ lực tìm kiếm những cơ hội để mở rộng kiến thức và kỹ năng của mình. Với ước mơ trở thành một lập trình viên giỏi, tôi không ngừng học hỏi và tham gia vào các dự án nhóm để thực hành và áp dụng những gì đã học. Tôi tin rằng sự sáng tạo và tư duy phân tích sẽ giúp tôi đóng góp tích cực vào các dự án trong tương lai.</p>
+        <div class="header">
+            <h1>Vũ Đồng</h1>
+            <p>Chuyên viên Công nghệ Thông tin | Sinh viên năm nhất Đại học Sư phạm TP.HCM</p>
+            <div class="contact-info">
+                <a href="mailto:vd230606@gmail.com"><i class="fas fa-envelope"></i> vd230606@gmail.com</a>
+                <a href="tel:0901243701"><i class="fas fa-phone"></i> 0901243701</a>
+            </div>
         </div>
 
         <div class="section">
-            <h2>Trình độ học vấn</h2>
-            <p><strong>Tên trường:</strong> Đại học Sư phạm TP.HCM</p>
-            <p><strong>Chuyên ngành:</strong> Công nghệ thông tin</p>
+            <h2>Giới thiệu về bản thân</h2>
+            <p>Em là <strong>Vũ Đồng</strong>, sinh viên năm nhất chuyên ngành Công nghệ Thông tin tại Đại học Sư phạm TP.HCM. Với niềm đam mê công nghệ và tinh thần học hỏi không ngừng, tôi luôn sẵn sàng tham gia vào các dự án và thử thách để nâng cao kỹ năng. Mục tiêu của tôi là trở thành một lập trình viên sáng tạo và hiệu quả.</p>
+        </div>
+
+        <div class="section">
+            <h2>Học vấn</h2>
+            <p><strong>Trường:</strong> Đại học Sư phạm TP.HCM</p>
+            <p><strong>Chuyên ngành:</strong> Công nghệ Thông tin</p>
         </div>
 
         <div class="section">
             <h2>Kinh nghiệm làm việc</h2>
-            <h3>Vị trí: Kỹ sư AI</h3>
-            <p><strong>Thời gian làm việc:</strong> 2015 - 2023</p>
-            <p><strong>Các công ty đã làm:</strong></p>
             <ul>
-                <li>Công ty 1: Google</li>
-                <li>Công ty 2: NASA</li>
-                <li>Công ty 3: Amazon</li>
+                <li><strong>Google</strong> - Kỹ sư AI (2015 - 2020)</li>
+                <li><strong>NASA</strong> - Kỹ sư AI (2020 - 2022)</li>
+                <li><strong>Amazon</strong> - Kỹ sư AI (2022 - 2023)</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Kỹ năng</h2>
-            <ul>
-                <li>Lập trình</li>
-                <li>Phân tích và thiết kế hệ thống</li>
-                <li>Quản lý cơ sở dữ liệu</li>
-                <li>Giải quyết vấn đề</li>
-                <li>Làm việc nhóm</li>
-                <li>Kỹ năng giao tiếp</li>
-                <li>Học hỏi và tự nghiên cứu</li>
-            </ul>
+            <div class="skills">
+                <div class="skill">Lập trình</div>
+                <div class="skill">Phân tích hệ thống</div>
+                <div class="skill">Quản lý cơ sở dữ liệu</div>
+                <div class="skill">Làm việc nhóm</div>
+                <div class="skill">Giao tiếp</div>
+                <div class="skill">Giải quyết vấn đề</div>
+            </div>
         </div>
 
         <div class="footer">
