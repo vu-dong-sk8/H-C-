@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV của Vũ Đồng, chuyên viên Công nghệ Thông tin, sinh viên năm nhất ĐH Sư phạm TP.HCM.">
+    <meta name="keywords" content="CV Vũ Đồng, Công nghệ Thông tin, lập trình viên, sinh viên IT">
+    <meta name="author" content="Vũ Đồng">
     <title>CV chuyên nghiệp - Vũ Đồng</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -22,10 +25,11 @@
             overflow: hidden;
         }
         .header {
-            background-color: #3498db;
+            background: linear-gradient(135deg, #3498db, #2980b9);
             color: #fff;
             padding: 40px;
             text-align: center;
+            position: relative;
         }
         .header h1 {
             margin: 0;
@@ -36,11 +40,21 @@
             font-size: 18px;
             margin-top: 10px;
         }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
         .contact-info {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-top: 10px;
+            margin-top: 20px;
         }
         .contact-info a {
             color: #fff;
@@ -79,6 +93,19 @@
             flex: 1 1 calc(33% - 20px);
             text-align: center;
         }
+        .progress-bar {
+            background: #e1e8f0;
+            border-radius: 5px;
+            height: 10px;
+            width: 100%;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background: #3498db;
+            border-radius: 5px;
+        }
         .footer {
             text-align: center;
             padding: 20px;
@@ -86,11 +113,31 @@
             color: #bdc3c7;
             font-size: 14px;
         }
+        .footer .social-links a {
+            margin: 0 10px;
+            color: #bdc3c7;
+            transition: color 0.3s;
+        }
+        .footer .social-links a:hover {
+            color: #3498db;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 28px;
+            }
+            .section h2 {
+                font-size: 22px;
+            }
+            .skills .skill {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
+            
             <h1>Vũ Đồng</h1>
             <p>Chuyên viên Công nghệ Thông tin | Sinh viên năm nhất Đại học Sư phạm TP.HCM</p>
             <div class="contact-info">
@@ -111,28 +158,43 @@
         </div>
 
         <div class="section">
-            <h2>Kinh nghiệm làm việc</h2>
+            <h2>Dự án cá nhân</h2>
             <ul>
-                <li><strong>Google</strong> - Kỹ sư AI (2015 - 2020)</li>
-                <li><strong>NASA</strong> - Kỹ sư AI (2020 - 2022)</li>
-                <li><strong>Amazon</strong> - Kỹ sư AI (2022 - 2023)</li>
+                <li><strong>Website cá nhân:</strong> <a href="https://vd230606.wixstudio.com/vd-auth/product-page/limited-dl">https://vd230606.wixstudio.com/vd-auth/product-page/limited-dl</a></li>
+                
             </ul>
         </div>
 
         <div class="section">
             <h2>Kỹ năng</h2>
             <div class="skills">
-                <div class="skill">Lập trình</div>
-                <div class="skill">Phân tích hệ thống</div>
-                <div class="skill">Quản lý cơ sở dữ liệu</div>
-                <div class="skill">Làm việc nhóm</div>
-                <div class="skill">Giao tiếp</div>
-                <div class="skill">Giải quyết vấn đề</div>
+                <div class="skill">
+                    Lập trình
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    Phân tích hệ thống
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    Quản lý cơ sở dữ liệu
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="footer">
             <p>© 2024 Vũ Đồng - Tất cả quyền được bảo lưu.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourprofile"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </div>
 </body>
